@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar1{
+            width: fit-content;
+            background-color: rgb(148, 203, 248);
+        }
+        .navbar2{
+            width: fit-content;
+            background-color: rgb(223, 223, 223);
+        }
+        .navbar1 a{
+            padding: 10px;
+            color: blue;
+            padding-right: 100px;
+        }
+        .navbar2 a{
+            padding: 10px;
+            color: blue;
+            padding-right: 50px;
+        }
+        header .navbar1 {
+            padding: 10px;
+        }
+        header .navbar2 {
+            padding: 10px;
+        }
+        header .navbar1 a {
+            font-size: 1.57rem;
+            color: blue;
+            text-decoration: none;
+            letter-spacing: 0.04rem;
+            transition: 0.2s;
+        }
+        
+        header .navbar2 a {
+            font-size: 1.57rem;
+            color: blue;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        header .navbar1 a.active,
+        header .navbar1 a:hover {
+            background-color: orange;
+            color: white;
+        }
+        
+        header .navbar2 a.active,
+        header .navbar2 a:hover {
+            background-color: rgb(100, 100, 100);
+            color: white;
+        }
+        header{
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<p></p>
+<header>
+    <h3>Vertical Navigation Bar</h3>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar1">
+        <a class="active" href="#home">Home</a><br><br>
+        <a href="#Java">Java</a><br><br>
+        <a href="#CSS">CSS</a><br><br>
+        <a href="#HTML">HTML</a><br><br>
+        <a href="#Bootstrap">Bootstrap</a><br>
+    </nav>
+
+    <h3>Horizontal Navigation Bar</h3>
+    <nav class="navbar2"><a class="active" href="#home">Home</a>
+        <a href="#Java">Java</a>
+        <a href="#CSS">CSS</a>
+        <a href="#HTML">HTML</a>
+        <a href="#Bootstrap">Bootstrap</a>
+    </nav>
+</header>
+<br><br>
+Click Here to go <a href="index.html">HOME Page.</a>
+</html>
