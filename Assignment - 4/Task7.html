@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Animation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Style the train images */
+        .train-image {
+            position: absolute;
+            transition: left 1s linear;
+        }
+        #train {
+            position: relative;
+            animation-name: moveTrain;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes moveTrain {
+            0% { left: -550px; }
+            100% { left: 125%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1>Train Animation</h1>
+        <button class="btn btn-primary" id="startBtn" onclick="startAnimation()">Start</button>
+        <button class="btn btn-danger" id="stopBtn" onclick="stopAnimation()">Stop</button>
+    </div>
+    
+    <div class="container mt-3">
+        <div id="train">
+            <!-- Train images -->
+            <img class="train-image" src="toy-train-png-23.png" alt="Train 1" style="left: 0;">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+    <script>
+        let animationInterval;
+
+        function startAnimation() {
+            const train = document.getElementById("train");
+            train.style.animationPlayState = "running";
+        }
+
+        function stopAnimation() {
+            const train = document.getElementById("train");
+            train.style.animationPlayState = "paused";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<div>
+    Click Here to go <a href="index.html">HOME Page.</a>
+</div>

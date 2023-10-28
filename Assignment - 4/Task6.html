@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="text-center">Instagram</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember Me</label>
+                        </div>
+                        <div class="text-right">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-block" onclick="login()">Log In</button>
+                    </form>
+                </div>
+            </div>
+            <p class="text-center mt-3">
+              Don't have an account? <a href="#">Sign up</a>
+          </p>
+        </div>
+    </div>
+    <div>
+        Click Here to go <a href="index.html">HOME Page.</a>
+    </div>
+</div>
+
+<script>
+function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    
+    // You can add authentication logic here, e.g., check credentials against a database.
+    // For this example, we'll just display a message.
+    if (username === 'demo' && password === 'demo123') {
+        alert('Login successful!'); // Replace with your authentication logic.
+    } else {
+        alert('Login failed. Please check your credentials.');
+    }
+}
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Sorting</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>String Sorting</h1>
+    <div class="form-group">
+        <label for="stringInput">Enter a String:</label>
+        <input type="text" class="form-control" id="stringInput">
+    </div>
+    <button class="btn btn-primary" onclick="sortString()">Sort</button>
+    <p>Sorted String: <span id="sortedString"></span></p>
+    <div>
+        Click Here to go <a href="index.html">HOME Page.</a>
+    </div>
+</div>
+
+<script>
+function sortString() {
+    const inputString = document.getElementById('stringInput').value;
+    const sortedString = inputString.split('').sort().join('');
+    document.getElementById('sortedString').textContent = sortedString;
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
