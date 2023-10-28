@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .home {
+            background-image: url("12919.jpg");
+            background-repeat: no-repeat;
+            height: 90vh;
+            background-size: 100%;
+        }
+        body{
+            padding-left: 5%;
+            padding-right: 5%;
+            background-color: rgb(193, 193, 193);
+        }
+        @media screen and (min-width: 992px) {
+            p, .navbar {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-bottom: 0;
+            }
+            .navbar .navbar-nav .nav-link {
+                padding: 1em 0;
+                color: white;
+            }
+            .navbar .navbar-nav .nav-item {
+                margin: 0 1em;
+                padding-top: 1%;
+            }
+        }
+        .navbar .navbar-nav .nav-item {
+            position: relative;
+        }
+        .navbar .navbar-nav .nav-item::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            content: "";
+            background-color: rgb(255, 234, 0);
+            width: 0%;
+            height: 4px;
+            transition: all 0.5s;
+        }
+        .navbar .navbar-nav .nav-item:hover::after {
+            width: 100%;
+        }
+        .display{
+            text-align: center;
+        }
+        #black{
+            background-color: black;
+            color: #ffc800;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        #yellow{
+            background-color: #ffc800;
+            color: black;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        
+        .content-box {
+            text-align: left;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div style="background-color: #ffc800">
+        <div class="row">
+            <div class="fw-bold" href="#" style="font-size: 40px; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-inline-start: 5%;">Builderz</div>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffc800">
+                <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #000000">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PROJECT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PAGES
+                        </a>
+                        <ul class="dropdown-menu active" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">CONTACT</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <button class="btn btn-dark me-4" type="button">Get A Quote</button>
+                    </form>
+                </div>
+                </div>
+            </nav>
+        </div>    
+    </div>
+    <div class="home pt-5">
+        <div class="display display-6">
+            We Are Professional
+        </div>
+        <div class="display display-1">
+            For Your Dream Project
+        </div>
+        <div class="display">
+            <form class="d-flex">
+                <button class="btn btn-dark me-4" type="button">Get A Quote</button>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4" id="black">
+                <div class="content-box">
+                    <h4>Expert Work</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, accusantium fugit iure illo excepturi culpa illum necessitatibus, vitae esse aperiam ipsum iusto corporis voluptate voluptas perspiciatis libero laborum at accusamus!</p>
+                </div>
+            </div>
+            <div class="col-4" id="yellow">
+                <div class="content-box">
+                    <h4>Quality Work</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate labore, asperiores, earum beatae cumque illum alias, adipisci quaerat animi quam magnam ea odio. Nobis, tempore deleniti eius quae laborum omnis!</p>
+                </div>
+            </div>
+            <div class="col-4" id="black">
+                <div class="content-box">
+                    <h4>24/7 Support</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni perferendis incidunt fugit eos, harum nemo. Inventore itaque sunt voluptate neque excepturi dicta! A enim, officia quae laudantium fugit quia eveniet!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</html>
+<div>
+    Click Here to go <a href="index.html">HOME Page.</a>
+</div>

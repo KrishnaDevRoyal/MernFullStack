@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+      .blue-grid {
+          background-color: rgb(0, 200, 250);
+          color: white;
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: px;
+          color: black;
+          font-size: large;
+          font-weight: 400;
+      }
+      .gray-grid {
+          background-color: rgb(65, 65, 65);
+          color: white;
+          text-align: center;
+          padding: 20px;
+      }
+      .dark-gray-grid {
+          text-align: center;
+          padding: 20px;
+      }
+      .content-box {
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 50%;
+          height: 200;
+      }
+      .display{
+          text-align: center;
+      }
+      body{
+        padding-top: 0%;
+      }
+      p{
+        padding-top: 10px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      
+      <div class="row">
+        <div class="col dark-gray-grid">
+          <nav class="navbar bg-white border-bottom border-body">
+            <ul class="list-inline float-left">
+              <li href="#" class="list-inline-item">Company Name</li>
+            </ul>
+            <ul class="list-inline float-right">
+              <li href="#" class="list-inline-item">Features</li>
+              <li href="#" class="list-inline-item">Enterprise</li>
+              <li href="#" class="list-inline-item">Support</li>
+              <li href="#" class="list-inline-item">Pricing</li>
+              <button type="button" class="btn btn-outline-primary">Sign Up</button>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+      
+    <div class="home pt-5">
+      <div class="display display-2">
+          Pricing
+      </div>
+      <div class="display display-5">
+          <p>Quickly build an effective pricing table 
+            for your potential customers with this <br> Bootstrap 
+            example. It's built with default Bootstrap 
+            components and utilites <br> with little customization.
+          </p>
+      </div>
+    </div>
+
+    <div class="tours p-3">
+      <h1 class="text-center bg-white p-3">Tours And Packages</h1>
+      <div class="container">
+        <div class="row">
+          <!-- start of 1 row -->
+          <div class="col-sm p-2 m-2">
+            <!-- card start -->
+            <div class="card border-dark mb-3" style="max-width: 18rem;">
+              <div class="text-center card-header border-dark"><h5>Free</h5></div>
+              <div class="text-center card-body">
+                <h3 class="text-centerd d-inline-flex">$0</h3> / mo
+                <p class="text-center card-text">10 users included <br> 2 GB of storage <br> Email support <br> Help center access</p><p></p>
+                </div>
+              <button type="button" class="btn btn-outline-primary">Sign up for free</button>
+            </div>
+            <!-- card ends -->
+          </div>
+
+          <div class="col-sm p-2 m-2">
+            <!-- card start -->
+            <div class="text-center card border-dark mb-3" style="max-width: 18rem;">
+              <div class="text-center card-header border-dark"><h5>Pro</h5></div>
+              <div class="text-center card-body">
+                <h3 class="text-centerd d-inline-flex">$15</h3> / mo
+                <p class="text-center card-text">20 users included <br> 10 GB of storage <br> Priority email support <br> Help center access</p><p></p>
+              </div>
+              <button type="button" class="btn btn-primary">Get started</button>
+            </div>
+            <!-- card ends -->
+          </div>
+
+          <div class="col-sm p-2 m-2">
+            <!-- card start -->
+            <div class="text-center card border-dark mb-3" style="max-width: 18rem;">
+              <div class="text-center card-header border-dark"><h5>Enterprise</h5></div>
+              <div class="text-center card-body">
+                <h3 class="text-centerd d-inline-flex">$29</h3> / mo
+                <p class="text-center card-text">30 users included <br> 15 GB of storage <br> Phone and email support <br> Help center access</p>
+              </div>
+              <button type="button" class="btn btn-primary">Contact us</button>
+            </div>
+            <!-- card ends -->
+          </div>
+          <!-- end of 1 row -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary border-top border-body">
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" aria-label="Bootstrap">
+              <svg width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
+            </a>
+            <ul class="list-unstyled small">
+              <li class="mb-2">@ 2017</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3 mb-3">
+            <h5>Features</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">Cool Stuff</li>
+              <li class="mb-2">Random feature</li>
+              <li class="mb-2">Team feature</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>Projects</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">Resources</li>
+              <li class="mb-2">Resource name</li>
+              <li class="mb-2">Another Recource</li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <h5>About</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">Team</li>
+              <li class="mb-2">Locations</li>
+              <li class="mb-2">Privacy</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          Click Here to go <a href="index.html">HOME Page.</a>
+        </div>
+      </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

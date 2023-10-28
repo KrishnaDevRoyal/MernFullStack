@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .blue-grid {
+            background-color: rgb(0, 200, 250);
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: px;
+            color: black;
+            font-size: large;
+            font-weight: 400;
+        }
+        .gray-grid {
+            background-color: rgb(65, 65, 65);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .dark-gray-grid {
+            background-color: darkgray;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .content-box {
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 45%;
+            height: 200;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- First Upper Horizontal Grid -->
+            <div class="col blue-grid">
+                ETHNUS LAYOUT
+            </div>
+        </div>
+        <div class="row">
+            <!-- Second Upper Horizontal Grid -->
+            <div class="col dark-gray-grid">
+                <nav>
+                    <ul class="list-inline float-left">
+                        <li class="list-inline-item">Home</li>
+                        <li class="list-inline-item">Menu</li>
+                        <li class="list-inline-item">About</li>
+                        <li class="list-inline-item">Contact</li>
+                    </ul>
+                    <ul class="list-inline float-right">
+                        <li class="list-inline-item">Sign Up</li>
+                        <li class="list-inline-item">Login</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-10">
+                <div class="content-box">
+                    Write your content here
+                </div>
+                <div>
+                    Click Here to go <a href="index.html">HOME Page.</a>
+                </div>
+            </div>
+            <div class="col-2 gray-grid">
+                <div class="content-box">
+                    This is
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
